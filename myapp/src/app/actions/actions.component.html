@@ -1,0 +1,30 @@
+<div >
+  <app-new-action></app-new-action>
+  <div class="form-admin-container">
+    <form class="admin-form" (ngSubmit)="submitAccounNumber()">
+      <button class="close-admin-modal-icon" type="button">
+        X
+      </button>
+      <h3 class="form-admin-header">Account no </h3>
+      <label class="form-admin-label">Account No :</label>
+      <input
+        type="number"
+        name="accountNo"
+        class="admin-form-input"
+        [(ngModel)]="accountNo"
+        #titleInput="ngModel"
+        required
+      />
+      <button class="submit-admin-form" type="submit">Submit</button>
+    </form>
+  </div>
+  <div id="container">
+    <div class="menu-item" *ngFor="let action of actions">
+      <h3>Account Number : {{ action.accountNo }} </h3>
+      <h3>Action Type : {{ action.action }} </h3>
+      <h3>Amount Of : {{ action.amount }} $</h3>
+      <h3>Loan Payments :{{ action.payments }}</h3>
+      <h3>Loan Rate : {{ action.rate }}%</h3>
+    </div>
+  </div>
+</div>

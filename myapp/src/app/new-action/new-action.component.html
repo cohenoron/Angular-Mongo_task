@@ -1,0 +1,69 @@
+
+<div class="form-admin-container">
+  <form class="admin-form" (ngSubmit)="submitForm()">
+    <button class="close-admin-modal-icon" type="button">
+      X
+    </button>
+    <h3 class="form-admin-header">What To Do ?</h3>
+    <label class="form-admin-label">Account No :</label>
+    <input
+      type="number"
+      name="accountNo"
+      class="admin-form-input"
+      [(ngModel)]="accountNo"
+      #titleInput="ngModel"
+      required
+    />
+
+    <label class="form-admin-label">Actions List :</label>
+    <input
+      list="list"
+      type="list"
+      name="action"
+      class="admin-form-input"
+      [(ngModel)]="action"
+      #categoryInput="ngModel"
+      required
+    />
+    <datalist id="list">
+      <option value="Withdraw"></option>
+      <option value="Deposit"></option>
+      <option value="I Need A Loan"></option>
+    </datalist>
+
+    <label class="form-admin-label">Total Amount $ : </label>
+    <input
+      class="admin-form-textarea"
+      type="number"
+      name="amount"
+      [(ngModel)]="amount"
+      #descriptionInput="ngModel"
+      required
+    />
+    <label class="form-admin-label">Loan Payments : </label>
+    <input
+      
+      class="admin-form-input"
+      type="number"
+      name="payments"
+      [(ngModel)]="payments"
+      #destinationInput="ngModel"
+      required
+    />
+  
+
+    <label class="form-admin-label">Interest Rate (%) </label>
+    <input
+      class="admin-form-textarea"
+      type="number"
+      name="rate"
+      [(ngModel)]="rate"
+      #imgUrlInput="ngModel"
+      required
+    />
+    <button class="submit-admin-form" type="submit">Submit</button>
+  </form>
+</div>
+
+
+
