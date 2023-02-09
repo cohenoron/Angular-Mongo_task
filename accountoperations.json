@@ -1,0 +1,46 @@
+[{
+  "_id": {
+    "$oid": "63e154a46efb1387682dbd64"
+  },
+  "accountNo": 1,
+  "action": "Deposit",
+  "amount": 1000,
+  "payments": 2,
+  "rate": 2,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e15db84192d8ea32a5342d"
+  },
+  "accountNo": 2,
+  "action": "Withdraw",
+  "amount": 3000,
+  "payments": 2,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e39c0109cedb65eee560f6"
+  },
+  "accountNo": 4,
+  "action": "Withdraw",
+  "amount": 3333,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e39c2009cedb65eee560f8"
+  },
+  "accountNo": 1,
+  "action": "Withdraw",
+  "amount": 3333,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e39c5109cedb65eee560fa"
+  },
+  "accountNo": 1,
+  "action": "Withdraw",
+  "amount": 3333,
+  "payments": 3,
+  "rate": 3,
+  "__v": 0
+}]
